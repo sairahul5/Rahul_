@@ -1,0 +1,166 @@
+:root {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #9fb5c7, #ffffff);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Copy all navigation styles from index.css */
+/* ... (copy all navigation-related styles from index.css) ... */
+
+/* About page specific styles */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.about-card {
+    width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.2);
+}
+
+.profile-name {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.profile-title {
+    color: #fff;
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.about-content {
+    color: #fff;
+}
+
+.about-content h2 {
+    margin: 20px 0;
+    font-size: 1.8em;
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    backdrop-filter: blur(5px);
+    color: #000000;
+}
+
+/* Hover effects */
+.about-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.skill-tag:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Update navigation ul styles to center the items */
+.navigation ul {
+    display: flex;
+    width: 700px;
+    margin: 0 auto; /* Center the navigation items */
+    padding: 0;
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Remove brand-related styles
+.navigation .brand {
+    ...
+}
+.navigation .brand .cursor {
+    ...
+}
+*/
+
+.navigation {
+    position: fixed; /* Keep the navigation fixed at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background-color: rgba(30, 39, 46, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Bottom border */
+    z-index: 1000; /* Ensure it stays on top */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for spacing */
+}
+
+.navigation .brand {
+    flex-grow: 1; /* Allow brand to take available space */
+}
+
+.navigation ul {
+    display: flex; /* Flexbox for horizontal layout */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.navigation .list {
+    margin: 0 15px; /* Space between list items */
+}
+
+.navigation .list a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Text color */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.navigation .list.active a {
+    color: #007BFF; /* Active link color */
+}
+
+.navigation .list a:hover {
+    color: #00BFFF; /* Change color on hover */
+} 

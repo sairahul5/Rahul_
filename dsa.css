@@ -1,0 +1,187 @@
+:root {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #9fb5c7, #ffffff);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation styles (if needed) */
+.navigation {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 70px;
+    background-color: rgba(30, 39, 46, 0.3);
+    backdrop-filter: blur(60px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.35);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.navigation:hover {
+    box-shadow: 0 8px 32px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgba(30, 39, 46, 0.4);
+}
+
+/* About content styles */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.about-card {
+    width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.2);
+}
+
+.profile-name {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.profile-title {
+    color: #fff;
+    font-size: 1.2em;
+    opacity: 0.8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+    color: #fff;
+}
+
+.about-content h2 {
+    margin: 20px 0;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    backdrop-filter: blur(5px);
+    color: #000000;
+}
+
+/* Hover effects */
+.about-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.skill-tag:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Scrolling box styles */
+.about-content {
+    max-height: 400px; /* Set the height of the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #ffffff, #b3d9ff); /* Blue-to-white gradient */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #9bcae4 #f0f0f0; /* Custom scrollbar colors */
+}
+
+/* Customize scrollbar appearance for Chrome, Edge, and Safari */
+.about-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.about-content::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light background for scrollbar track */
+}
+
+.about-content::-webkit-scrollbar-thumb {
+    background-color: #00b7ff; /* Blue scrollbar thumb */
+    border-radius: 10px;
+}
+
+/* Button styles */
+.go-background {
+    margin-top: 10px; /* Space above the button */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width */
+    margin-left: -0.6em; /* Move slightly to the left */
+}
+
+.go-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9ad7f0; /* Button background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.go-button:hover {
+    background-color: #aed6eb; /* Darker blue on hover */
+    transition: 0.1s;
+}
+
+/* Add this style for the list items */
+.about-content ul li {
+    color: #9ad7f0; /* Change text color to #9ad7f0 */
+    font-size: 1.2em; /* Optional: adjust font size */
+    margin: 5px 0; /* Optional: add some margin */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
